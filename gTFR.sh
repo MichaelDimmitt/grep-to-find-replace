@@ -25,6 +25,8 @@ sedSearchAndReplace() {
   
   sed -i 's/^.*"$find".*$/"$replace"/' $3;
 
+  # just in case alternative: sed 's/'"${find}"'/'"${replace}"'/'
+
   # https://unix.stackexchange.com/questions/32497/grep-search-and-replace-full-line/32507#32507
 }
 
